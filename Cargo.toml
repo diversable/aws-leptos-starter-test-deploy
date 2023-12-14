@@ -1,5 +1,5 @@
 [package]
-name = "test-deploy-start-aws"
+name = "aws_leptos_starter_test_deploy"
 version = "0.1.0"
 edition = "2021"
 
@@ -65,7 +65,7 @@ opt-level = 2
 [package.metadata.lambda.deploy]
 # Leptos generally doesn't take more than a few hundred milliseconds even with a cold start
 timeout = 3
-env = { LEPTOS_ENV = "PROD", LEPTOS_OUTPUT_NAME = "test-deploy-start-aws", LEPTOS_SITE_ROOT = "target/site", LEPTOS_SITE_PKG_DIR = "pkg" }
+env = { LEPTOS_ENV = "PROD", LEPTOS_OUTPUT_NAME = "aws_leptos_starter_test_deploy", LEPTOS_SITE_ROOT = "target/site", LEPTOS_SITE_PKG_DIR = "pkg" }
 
 [package.metadata.leptos]
 # Since we'll be testing without --release, we'll set up a dev profile to allow some optimization
@@ -73,7 +73,7 @@ bin-profile-dev = "server-dev"
 lib-profile-dev = "wasm-dev"
 
 # The name used by wasm-bindgen/cargo-leptos for the JS/WASM bundle. Defaults to the crate name
-output-name = "test-deploy-start-aws"
+output-name = "aws_leptos_starter_test_deploy"
 
 # The site root folder is where cargo-leptos generate all output. WARNING: all content of this folder will be erased on a rebuild. Use it in your server setup.
 site-root = "target/site"

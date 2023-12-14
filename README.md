@@ -24,11 +24,11 @@ cargo leptos new --git leptos-rs/start-axum
 to generate a new project template.
 
 ```bash
-cd test-deploy-start-aws
+cd aws_leptos_starter_test_deploy
 ```
 
-to go to your newly created project.  
-Feel free to explore the project structure, but the best place to start with your application code is in `src/app.rs`.  
+to go to your newly created project.
+Feel free to explore the project structure, but the best place to start with your application code is in `src/app.rs`.
 Additionally, Cargo.toml may need updating as new versions of the dependencies are released, especially if things are not working after a `cargo update`.
 
 ## Running your project
@@ -68,7 +68,7 @@ cargo leptos end-to-end
 cargo leptos end-to-end --release
 ```
 
-Cargo-leptos uses Playwright as the end-to-end test tool.  
+Cargo-leptos uses Playwright as the end-to-end test tool.
 Tests are located in end2end/tests directory.
 
 ## Deploying Your Project
@@ -90,10 +90,10 @@ you'll have to manage the WASM build and optimization yourself.
 Next, let's build the production server binary:
 
 ```bash
-LEPTOS_OUTPUT_NAME=test-deploy-start-aws cargo lambda build --no-default-features --features=ssr --release
+LEPTOS_OUTPUT_NAME=aws_leptos_starter_test_deploy cargo lambda build --no-default-features --features=ssr --release
 ```
 
-This should produce a binary at `target/lambda/test-deploy-start-aws/bootstrap`.
+This should produce a binary at `target/lambda/aws_leptos_starter_test_deploy/bootstrap`.
 `Cargo.toml` exposes all the required environment variables to `cargo-lambda`
 so that the server can run in production.
 
