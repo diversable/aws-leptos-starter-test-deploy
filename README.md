@@ -128,8 +128,8 @@ For a quick and dirty setup, you can:
 
 ```
 [default]
-aws_access_key_id = AKIAQYLPMN5HCTNK35FD
-aws_secret_access_key = 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
+aws_access_key_id = ***************
+aws_secret_access_key = **************
 ```
 
 ### State
