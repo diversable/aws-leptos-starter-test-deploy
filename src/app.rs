@@ -48,7 +48,7 @@ fn HomePage() -> impl IntoView {
                 <source srcset="https://raw.githubusercontent.com/leptos-rs/leptos/main/docs/logos/Leptos_logo_pref_dark_RGB.svg" media="(prefers-color-scheme: dark)" />
                 <img src="https://raw.githubusercontent.com/leptos-rs/leptos/main/docs/logos/Leptos_logo_RGB.svg" alt="Leptos Logo" height="200" width="400"/>
             </picture>
-            <h1>"Welcome to Leptos "<i>"On Shuttle.rs"</i>"!"</h1>
+            <h1>"Welcome to Leptos "<i>"On AWS Lambda"</i>"!"</h1>
             <button on:click=on_click>"Click Me: " {count}</button>
         </div>
     }
